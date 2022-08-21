@@ -22,6 +22,7 @@ final sl = GetIt.instance;
 Future<void> init() async {
   //! Features -
   // bloc
+
   sl.registerFactory(() => NumberTriviaBloc(
         concreateNumberTrvia: sl(),
         rendomNumberTrivia: sl(),
@@ -47,6 +48,7 @@ Future<void> init() async {
         networkInfo: sl(),
       ));
 
+// Remote Source
   sl.registerLazySingleton<NumberTrviaRemoteDataSource>(
       () => NumberTrviaRemoteDataSourceImpl(sl()));
   sl.registerLazySingleton<LoginRemoteDataSource>(
