@@ -24,7 +24,9 @@ Future<void> init() async {
   // bloc
 
   //hey
-
+  // test
+  // test2
+  // test3
   sl.registerFactory(() => NumberTriviaBloc(
         concreateNumberTrvia: sl(),
         rendomNumberTrivia: sl(),
