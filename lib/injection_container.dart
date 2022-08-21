@@ -23,6 +23,8 @@ Future<void> init() async {
   //! Features -
   // bloc
 
+  //hey
+
   sl.registerFactory(() => NumberTriviaBloc(
         concreateNumberTrvia: sl(),
         rendomNumberTrivia: sl(),
