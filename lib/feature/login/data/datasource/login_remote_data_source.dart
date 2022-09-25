@@ -17,7 +17,7 @@ class LoginRemoteDataSourceImpl implements LoginRemoteDataSource {
   @override
   Future<LoginModel> postLogin(Map credencial) async {
     var param = json.encode(credencial);
-    print("Started");
+
     final response = await client.post(
       Uri.parse('https://node.inheritxdev.in/QDIS-Dev/v1/users/login'),
       headers: {'Content-Type': 'application/json'},
